@@ -1,0 +1,28 @@
+{
+  "name": "@darkmatter/create",
+  "version": "0.1.0",
+  "description": "Darkmatter project templates for `vp create @darkmatter`",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkmatter/create.git"
+  },
+  "files": [
+    "README.md"
+  ],
+  "createConfig": {
+    "templates": [
+      {
+        "name": "monorepo",
+        "description": "Darkmatter monorepo (Bun, Effect, Nix, Alchemy)",
+        "template": "github:darkmatter/template",
+        "monorepo": true
+      }
+    ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true,
+    "registry": "https://registry.npmjs.org"
+  }
+}
