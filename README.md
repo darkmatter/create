@@ -1,16 +1,16 @@
-# @darkmatter/create
+# @drkmttr/create
 
 The Darkmatter template index for [Vite+](https://viteplus.dev/guide/create#organization-templates).
-`vp create @darkmatter` reads the `createConfig.templates` list in
+`vp create @drkmttr` reads the `createConfig.templates` list in
 `package.json` and offers those templates in a picker. The Vite+ built-in
 templates always appear at the end of that picker.
 
 ## Use
 
 ```sh
-vp create @darkmatter            # pick a template
-vp create @darkmatter:monorepo   # use one template directly
-vp create @darkmatter --no-interactive   # print the template list
+vp create @drkmttr            # pick a template
+vp create @drkmttr:monorepo   # use one template directly
+vp create @drkmttr --no-interactive   # print the template list
 ```
 
 To make `vp create` (no argument) open this picker inside a repo, add this to
@@ -20,7 +20,7 @@ the repo's root `vite.config.ts`:
 import { defineConfig } from "vite-plus";
 
 export default defineConfig({
-  create: { defaultTemplate: "@darkmatter" },
+  create: { defaultTemplate: "@drkmttr" },
 });
 ```
 
@@ -46,8 +46,8 @@ those when `vp create` runs inside an existing monorepo.
 Vite+ fails with an error when the list is invalid. To check a change before
 publishing, publish it to a local registry such as
 [Verdaccio](https://verdaccio.org), point the scope at it with an `.npmrc`
-line like `@darkmatter:registry=http://127.0.0.1:4873/`, and run
-`vp create @darkmatter --no-interactive` next to that `.npmrc`.
+line like `@drkmttr:registry=http://127.0.0.1:4873/`, and run
+`vp create @drkmttr --no-interactive` next to that `.npmrc`.
 
 Vite+ converts every scaffolded project to Vite+: it adds `vite.config.ts`,
 rewrites lint, format, and test scripts to `vp`, and installs `vite-plus`.

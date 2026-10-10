@@ -1,7 +1,7 @@
 {
-  "name": "@darkmatter/create",
+  "name": "@drkmttr/create",
   "version": "0.1.0",
-  "description": "Darkmatter project templates for `vp create @darkmatter`",
+  "description": "Darkmatter project templates for `vp create @drkmttr`",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
